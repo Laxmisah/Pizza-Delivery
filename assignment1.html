@@ -1,0 +1,142 @@
+<html>
+    <head>
+        <title>Pizza</title>
+         <style>
+            form{
+                width: 70%;
+                display: flex; 
+                flex-direction: column; 
+                justify-content: center; 
+                align-items: center;
+                justify-content: center;
+                align-items: center;
+                background-color: aliceblue;
+                margin-left: 200px;
+            }
+            .additional-items {
+                display: grid;
+                grid-template-columns: 1fr 1fr; 
+                gap: 10px 30px; 
+            }
+            .additional-items label {
+                display: flex;
+                align-items: center;
+            }
+            .pizza-size-group {
+                display: flex;
+                flex-direction: column; 
+                gap: 10px; 
+            }
+            .pizza-size-group .radio-group {
+                margin-bottom: 15px; 
+            }
+            .pizzaimg{
+            background-image: url("pizza image.jpeg");
+            height: 200px;
+            width: 600px;
+            background-repeat: no-repeat;
+            background-position: center;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+        <h1 style="text-align: center;">
+            Pizza Order Form
+    </h1>
+        <h3 style="text-align: center;">The Freshest Pizza today!</h3>
+        <div class="pizzaimg">
+        </div>
+        <br>
+        Pizzas!!! 
+        <br>
+        <select name="Pizza">
+            <option value="Margherita">Margherita</option>
+            <option value="Pepperoni">Pepperoni</option>
+            <option value="Hawaiian">Hawaiian</option>
+            <option value="Cheese Volcano Peppy Paneer">Cheese Volcano Peppy Paneer</option>
+            <option value="Veggie Delight">Veggie Delight</option>
+            <option value="Mushroom and Olive">Mushroom and Olive</option>
+            <option value="Peppy Paneer">Peppy Paneer</option>
+            <option value="Taco Pizza">Taco Pizza</option>
+            <option value="Farmhouse">Farmhouse</option>
+            <option value="Corn n Cheese Paratha Pizza">Corn n Cheese Paratha Pizza</option>
+            <option value="Cheese Overload">Cheese Overload</option>
+            <option value="Golden Corn">Golden Corn</option>
+        </select>
+        <br><br>
+        Pizza Size
+        <br>
+        <div class="pizza-size-group">
+            <div class="radio-group">
+        <input type="radio" value="Personal(10 inches)" name="Pizza size" id="101">Personal(10 inches)    
+         <br>
+        <input type="radio" value="Medium(14 inches)" name="Pizza size" id="103">Medium(14 inches)
+        <div class="radio-group">
+        <input type="radio" value="Small(12 inches)" name="Pizza size" id="102">Small(12 inches)
+        <br>
+        <input type="radio" value="Large(16 inches)" name="Pizza size" id="104">Large(16 inches)
+        <br><br>
+        Additional Items:
+        <br>
+        <div class="additional-items">
+        <label for= "Garlic Bread">
+            <input type="checkbox" value="Garlic Bread" name="Pizza" id="101">Garlic Bread
+        </label>                      
+        <label for= "Cheese Bread">
+            <input type="checkbox" value="Cheese Bread" name="Pizza" id="103">Cheese Bread
+        </label>
+        <label for= "Chicken Wings">
+            <input type="checkbox" value="Chicken Wings" name="Pizza" id="102">Chicken Wings
+        </label>
+        <label for= "Mozzarella Sticks">
+            <input type="checkbox" value="Mozzarella Sticks" name="Pizza" id="104">Mozzarella Sticks
+        </label>
+        <label for= "Soft Drink">
+            <input type="checkbox" value="Soft Drink" name="Pizza" id="105">Soft Drink
+        </label>
+        <label for= "Garden Salad">
+            <input type="checkbox" value="Garden Salad" name="Pizza" id="107">Garden Salad
+        </label>
+        <label for= "Extra Cheese">
+            <input type="checkbox" value="Extra Cheese" name="Pizza" id="106">Extra Cheese
+        </label>
+        </div>
+        <br>
+        Name:
+    <input type="text" placeholder="text">       
+    Address:
+     <input type="text" placeholder="text">
+    <br><br>
+   Town/City: <input type="text" placeholder="text">
+   Pincode: <input type="text" placeholder="text">
+   <br><br>
+   Telephone: <input type="text" paceholder="text">
+   Email: <input type="text" placeholder="text">
+<h4>Delivery Method</h4>
+<input type="radio" value="Delivery" name="DeliveryMethod" id="101">Delivery   
+         <br>
+ <input type="radio" value="Pickup" name="DeliveryMethod" id="102">Pickup  
+         <br><br>
+        Special Instructions:
+        <br><br>
+         <textarea name="Additional notes or requests for your order." id="101" placeholder="Special Instructions" rows=5 column=2></textarea>
+         <br>
+         <h4>Payment Method</h4>
+         <input type="radio" value="Cash on delivery/Pickup" name="Payment Method">Cash on delivery/Pickup
+         <br>
+         <input type="radio" value="Credit/Debit Card" name="Payment Method">Credit/Debit Card
+         <br><br>
+         <button>Order</button>
+         <style>
+            button{
+                background-color:red;
+                height:50px;
+                width:100px;
+                border: none;
+                border-radius: 25px;
+            }
+         </style>
+    </form>
+        </body>
+</html>
